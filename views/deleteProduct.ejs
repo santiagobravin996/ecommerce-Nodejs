@@ -1,0 +1,33 @@
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <link rel="stylesheet" href="/css/create-modify.css">
+    <link rel="stylesheet" href="/css/deleteProduct.css">
+    <title>Borrar producto</title>
+</head>
+<body>
+    <%-include('./partials/header')%>
+
+        <main class="main">
+            <div class="contenedor-titulo-h4">
+                <h4 class="titulo-h4">Borrar <%=product.name%> </h4>
+            </div>
+            <section class="seccion-carga-producto">
+                <div class="contenedor-imagen-producto">
+                    <section class="image">
+                        <img src="/img/products/<%= product.images[0].file_name%>" alt="producto" class="imagen-producto">
+                    </section>
+                </div>
+
+                <form action="/product/delete-product/<%=product.id%>?_method=DELETE" method="POST">
+                            <button type="submit" value="" class="button">Borrar</button>
+                </form>
+            </section>
+
+
+        </main>
+
+
+        <%-include('./partials/footer')%>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>

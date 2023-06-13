@@ -1,0 +1,103 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0px;
+    /* border: 1px solid green; */
+    width: 100%;
+    align-content: flex-start;
+    background-image: url("/img/fondo.jpg");
+    min-height: 87vh;
+}
+.error{
+    color: rgb(153, 34, 34);
+}
+
+.invalid{
+    border: 2px solid rgb(153, 34, 34) !important;
+    margin-bottom: 5px;
+}
+
+
+#login-form{
+    /* border: 3px solid green; */
+    width: 100%;
+    margin-top: 30px;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.checkbox{
+    text-align: center;
+    font-family: cursive;
+}
+.a-forget{
+    color: #222;
+}
+
+.box-datos {
+    /* border: 3px solid blue; */
+    padding: 0 5%;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-datos label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box-datos input{
+    width: 280px;
+    height: 2rem;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin-top: 5px;
+}
+
+div.botones{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    /* border: 2px solid red; */
+}
+
+div.option-cb{
+    margin: 15px;
+    font-size: 0.8rem;
+}
+.option-cb input{
+    margin-right: 5px;
+}
+main form a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+div.botones button{
+    width: 6rem;
+    padding: 3px;
+    height: 2rem;
+    margin: 10px 0;
+    border: none;
+    color: white;
+    background-color:#325714;
+    border-radius: 5px;
+}
+
+div.botones:hover button{
+    background-color: #0022AA;
+}
+
+/* footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */

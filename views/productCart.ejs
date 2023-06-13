@@ -1,0 +1,27 @@
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/css/header_footer.css">
+    <link rel="stylesheet" href="/css/cartStyles.css">
+    <script type="module" src="/scripts/shoppingCartPage.js"></script>
+    <title>Carro de Compras</title>
+</head>
+<body>
+    <div class="grilla-contenedora">
+        <%-include('./partials/header')%>
+        <main class="main">
+            <div class="contenedor-carro-compras">
+                <section class="contenedor-titulo">
+                    <h3 class="titulo-carro">Carro de Compras</h3>
+                </section>
+                <section class="contenedor-articles"></section>
+                <div class="contenedor-botones-movile">
+                    <a href="/product/product-cart/payment-detail"><button class="boton-metodos-movile">Métodos de Pago</button></a>
+                </div>
+            </div>
+            <div class="contenedor-resumen-compra"></div>
+        </main>
+        <%-include('./partials/footer')%>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
